@@ -1,0 +1,16 @@
+*.~*
+*.exe
+*.db
+*.xsl
+*.doc
+*.jpg
+*.png
+*.log
+*.xls
+*.stat
+*.zip
+*.rar
+*.lst
+*.sel
+*.dll
+*.xml
