@@ -22,12 +22,26 @@ type InwPart struct {
 	Parts 		[]Part
 }
 
+type Invoice struct {
+	Id 			int 			`db:"ID"`
+	DocNum 		sql.NullString 	`db:"DOCNUM"`
+	Date 		sql.NullString 	`db:"DATA"`
+	BuyerId 	int 			`db:"BYER"`
+	Buyer 		string 			`db:"ORGMNE"`
+	Wrhouse 	int 			`db:"WRHOUSE"`
+	Parts 		[]Part
+}
+
 type Part struct {
 	Id 			int 	`db:"ID"`
 	CatalogN 	int 	`db:"CATALOGN"`
 	PartName	string 	`db:"NAME"`
 	Qty 		float64 `db:"QUANTITY"`
 	Price 		float64 `db:"PRICE"`
+}
+
+type Orgbase struct {
+	
 }
 
 func main() {
